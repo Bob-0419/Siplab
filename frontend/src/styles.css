@@ -1,0 +1,228 @@
+:root {
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+article,
+fieldset {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+}
+
+label {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+    padding: 0.5rem;
+}
+
+textarea {
+    width: min(100%, 36rem);
+}
+
+.hint {
+    margin-top: 0.25rem;
+    color: #475569;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #1d4ed8;
+    --color-primary-dark: #1e3a8a;
+    --color-surface: #ffffff;
+    --color-background: #f5f7fb;
+    --color-border: #cbd5e1;
+    --color-text: #1f2937;
+    --radius: 0.75rem;
+    --space: 1rem;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+main, .site-header, .site-footer {
+    width: min(1100px, calc(100% - 2rem));
+    margin-inline: auto;
+}
+
+.site-header {
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.brand {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--color-primary);
+    margin-right: 1rem;
+}
+
+.equipment-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-block: 1rem;
+}
+
+.equipment-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+fieldset {
+    margin-block: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+label {
+    display: block;
+    margin-top: 0.75rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    font: inherit
+}
+
+input:focus, select:focus, textarea:focus, a:focus {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-3);
+    padding-block: var(--space-3);
+    flex-wrap: wrap;
+}
+.site-header nav {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+@media (min-width: 48rem) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero_content {
+        flex-direction: row;
+        align-items: center;
+    }
+    .hero_content,
+    .hero_media {
+        flex: 1 1 0;
+    }
+}
+.equipment-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: var(--space-4);
+}
+.equipment-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+.form-grid {
+    display: grid;
+    gap: var(--space-4);
+}
+@media (min-width: 48rem) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+    }
+    .hero_content,
+    .hero_media {
+        flex: 1 1 0;
+    }
+    .form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+.form-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+.form-action > * {
+    flex: 1 1 10;
+}
+img,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
